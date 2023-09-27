@@ -50,4 +50,4 @@ scale = Vector2(2.013, 2.2)
 shape = SubResource("CapsuleShape2D_p14nm")
 metadata/_edit_group_ = true
 
-[connection signal="body_entered" from="." to="." method="_on_Player_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
