@@ -74,7 +74,7 @@ animations = [{
 radius = 7.30978
 height = 20.0565
 
-[node name="Mob" type="RigidBody2D"]
+[node name="Mob" type="RigidBody2D" groups=["mobs"]]
 position = Vector2(353, 248)
 disable_mode = 2
 mass = 4.39

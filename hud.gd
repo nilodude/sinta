@@ -16,7 +16,7 @@ func show_game_over():
 	$Message.text = "FUCK YOU AGAIN!"
 	$Message.show()
 	# Make a one-shot timer and wait for it to finish.
-	await get_tree().create_timer(1.5).timeout
+	await get_tree().create_timer(1).timeout
 	$StartButton.show()
 
 func update_score(score):
