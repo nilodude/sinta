@@ -1,22 +1,35 @@
-[gd_scene load_steps=3 format=3 uid="uid://cg0brtum8ymq"]
+[gd_scene load_steps=5 format=3 uid="uid://cg0brtum8ymq"]
 
 [ext_resource type="Script" path="res://hud.gd" id="1_1ykos"]
 [ext_resource type="FontFile" uid="uid://br7dc8v45nw11" path="res://fonts/Xolonium-Regular.ttf" id="1_b6lkc"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_txumj"]
+action = &"start_game"
+
+[sub_resource type="Shortcut" id="Shortcut_cq1pb"]
+events = [SubResource("InputEventAction_txumj")]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_1ykos")
 
 [node name="ScoreLabel" type="Label" parent="."]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -94.5
-offset_right = 94.5
+offset_right = 241.0
 offset_bottom = 64.0
-grow_horizontal = 2
 theme_override_fonts/font = ExtResource("1_b6lkc")
 theme_override_font_sizes/font_size = 50
-text = "0 FUCKS"
+text = "SCORE: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Lives" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -189.0
+offset_bottom = 64.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_b6lkc")
+theme_override_font_sizes/font_size = 50
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -49,6 +62,7 @@ grow_vertical = 0
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("1_b6lkc")
 theme_override_font_sizes/font_size = 64
+shortcut = SubResource("Shortcut_cq1pb")
 text = "FUCK
 "
 

@@ -22,6 +22,9 @@ func show_game_over():
 func update_score(score):
 	$ScoreLabel.text = str(score)
 	
+func update_lives(lives):
+	$Lives.text = str(lives)+' limbs left'
+	
 func _on_start_button_pressed():
 	$StartButton.hide()
 	start_game.emit()

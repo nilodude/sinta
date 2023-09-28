@@ -44,14 +44,18 @@ func _process(delta):
 		
 		
 func start(pos):
+	$CollisionShape2D.disabled = false
 	position = pos
 	show()
-	$CollisionShape2D.disabled = false
 
 
 func _on_body_entered(body):
-	
-	hide() # Player disappears after being hit.
+	$GotHit.play()
+	$CollisionShape2D.set_deferred(&"disabled", true)
 	hit.emit()
-	# Must be deferred as we can't change physics properties on a physics callback.
-	#$CollisionShape2D.set_deferred("disabled", true)
+		
+func enableCollision():
+	$CollisionShape2D.disabled= true
+	
+func disableCollision():
+	$CollisionShape2D.disabled= false

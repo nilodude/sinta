@@ -2,21 +2,37 @@ extends Node
 
 @export var mob_scene: PackedScene
 var score
+var lives
+
+func gotHit():
+	lives -= 1
+	$HUD.update_lives(lives)
+
+	$Player.get_node("CollisionShape2D").set_deferred("disabled",false)
+	if(lives == 0):
+		game_over()
+		
 
 
 func game_over():
+	$Player.get_node("CollisionShape2D").set_deferred("disabled",true)
+	$Music.stop()
 	$ScoreTimer.stop()
 	$MobTimer.stop()
 	$HUD.show_game_over()
+	$DeathSound.play()
 	
 	
 func new_game():
 	get_tree().call_group(&"mobs", &"queue_free")
 	score = 0
+	lives = 3
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
 	$HUD.update_score(score)
+	$HUD.update_lives(lives)
 	$HUD.show_message("Get Ready to be FUCKED")
+	$Music.play()
 
 
 func _on_mob_timer_timeout():

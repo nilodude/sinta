@@ -1,18 +1,18 @@
 [gd_scene load_steps=17 format=3 uid="uid://k74i1a5g8j56"]
 
-[ext_resource type="Script" path="res://mob.gd" id="1_vvabk"]
-[ext_resource type="Texture2D" uid="uid://s1m2y7iyvnic" path="res://art/m20.png" id="2_fadit"]
-[ext_resource type="Texture2D" uid="uid://dvqno43gycnmd" path="res://art/m22.png" id="3_xagpy"]
-[ext_resource type="Texture2D" uid="uid://bapp0i2pfldg3" path="res://art/m23.png" id="4_oa41b"]
-[ext_resource type="Texture2D" uid="uid://76vqxhsakokn" path="res://art/m24.png" id="5_jf7ry"]
-[ext_resource type="Texture2D" uid="uid://b36jvtblk3o1j" path="res://art/m00.png" id="6_3uy7i"]
-[ext_resource type="Texture2D" uid="uid://dg7ontri163d" path="res://art/m02.png" id="7_qvn22"]
-[ext_resource type="Texture2D" uid="uid://4jf6s67mxfbk" path="res://art/m03.png" id="8_j6ov8"]
-[ext_resource type="Texture2D" uid="uid://dhhd4wyvhtow5" path="res://art/m01.png" id="9_c3duj"]
-[ext_resource type="Texture2D" uid="uid://15b0vew838we" path="res://art/m12.png" id="10_h82q8"]
-[ext_resource type="Texture2D" uid="uid://yf86m3sif7a3" path="res://art/m10.png" id="11_35mpm"]
-[ext_resource type="Texture2D" uid="uid://cgd8epervq70f" path="res://art/m13.png" id="12_glvx7"]
-[ext_resource type="Texture2D" uid="uid://b5aqhs7wfmquf" path="res://art/m11.png" id="13_pttel"]
+[ext_resource type="Script" path="res://mob.gd" id="1_io53o"]
+[ext_resource type="Texture2D" uid="uid://s1m2y7iyvnic" path="res://art/m20.png" id="2_kwq2t"]
+[ext_resource type="Texture2D" uid="uid://dvqno43gycnmd" path="res://art/m22.png" id="3_b2t30"]
+[ext_resource type="Texture2D" uid="uid://bapp0i2pfldg3" path="res://art/m23.png" id="4_88pw8"]
+[ext_resource type="Texture2D" uid="uid://76vqxhsakokn" path="res://art/m24.png" id="5_3ti4t"]
+[ext_resource type="Texture2D" uid="uid://b36jvtblk3o1j" path="res://art/m00.png" id="6_23se6"]
+[ext_resource type="Texture2D" uid="uid://dg7ontri163d" path="res://art/m02.png" id="7_cbyj5"]
+[ext_resource type="Texture2D" uid="uid://4jf6s67mxfbk" path="res://art/m03.png" id="8_ptbum"]
+[ext_resource type="Texture2D" uid="uid://dhhd4wyvhtow5" path="res://art/m01.png" id="9_uqs1w"]
+[ext_resource type="Texture2D" uid="uid://15b0vew838we" path="res://art/m12.png" id="10_lj5ip"]
+[ext_resource type="Texture2D" uid="uid://yf86m3sif7a3" path="res://art/m10.png" id="11_tli8p"]
+[ext_resource type="Texture2D" uid="uid://cgd8epervq70f" path="res://art/m13.png" id="12_y5np4"]
+[ext_resource type="Texture2D" uid="uid://b5aqhs7wfmquf" path="res://art/m11.png" id="13_hlseq"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ilwdb"]
 
@@ -20,16 +20,16 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_fadit")
+"texture": ExtResource("2_kwq2t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_xagpy")
+"texture": ExtResource("3_b2t30")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_oa41b")
+"texture": ExtResource("4_88pw8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_jf7ry")
+"texture": ExtResource("5_3ti4t")
 }],
 "loop": true,
 "name": &"crawl",
@@ -37,16 +37,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_3uy7i")
+"texture": ExtResource("6_23se6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_qvn22")
+"texture": ExtResource("7_cbyj5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_j6ov8")
+"texture": ExtResource("8_ptbum")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_c3duj")
+"texture": ExtResource("9_uqs1w")
 }],
 "loop": true,
 "name": &"fly",
@@ -54,16 +54,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_h82q8")
+"texture": ExtResource("10_lj5ip")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_35mpm")
+"texture": ExtResource("11_tli8p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_glvx7")
+"texture": ExtResource("12_y5np4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_pttel")
+"texture": ExtResource("13_hlseq")
 }],
 "loop": true,
 "name": &"swim",
@@ -83,7 +83,7 @@ gravity_scale = 0.0
 max_contacts_reported = 6
 contact_monitor = true
 can_sleep = false
-script = ExtResource("1_vvabk")
+script = ExtResource("1_io53o")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
