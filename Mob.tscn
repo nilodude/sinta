@@ -71,11 +71,11 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tqdrg"]
-radius = 13.4301
-height = 32.0903
+radius = 7.30978
+height = 20.0565
 
 [node name="Mob" type="RigidBody2D"]
-position = Vector2(352, 249)
+position = Vector2(353, 248)
 disable_mode = 2
 mass = 4.39
 physics_material_override = SubResource("PhysicsMaterial_ilwdb")
@@ -87,7 +87,7 @@ script = ExtResource("1_vvabk")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.75, 0.75)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_gxfeo")
 animation = &"swim"
 frame = 3

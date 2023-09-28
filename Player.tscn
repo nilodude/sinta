@@ -32,9 +32,11 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p14nm"]
+radius = 13.6364
+height = 27.2727
 
 [node name="Player" type="Area2D"]
-position = Vector2(-1, 5)
+position = Vector2(0, 5)
 disable_mode = 2
 script = ExtResource("1_e3fio")
 metadata/_edit_group_ = true
@@ -46,6 +48,7 @@ animation = &"jump"
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
 scale = Vector2(2.013, 2.2)
 shape = SubResource("CapsuleShape2D_p14nm")
 metadata/_edit_group_ = true
